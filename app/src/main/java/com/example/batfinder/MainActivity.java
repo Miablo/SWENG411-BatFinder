@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        checkPermission();
+        checkPermission(); // calls check permission
         Button buttonguest = findViewById(R.id.Guest);
         Button buttonLogin = findViewById(R.id.Login);
         buttonLogin.setOnClickListener(new View.OnClickListener() {
@@ -28,31 +28,31 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 openLogin();
             }
-        });
+        }); // calls openLogin method with a onClick
         buttonguest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openDisclaimer();
             }
-        });
+        }); //calls openDiclamier method with a onClick
     }
 
-    private void checkPermission() {
-        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION)
+    private void checkPermission() { // ask for any permissions need add here for future permissions
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) //Ask for rough location permission
                 != PackageManager.PERMISSION_GRANTED) {
 
-            ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
+            ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, //Ask for fine location permission
                     MY_PERMISSIONS_REQUEST_READ_CONTACTS);
         }
     }
 
     public void openDisclaimer(){
-        Intent intent = new Intent(this, Disclaimer.class);
-        startActivity(intent);
+        Intent intent = new Intent(this, Disclaimer.class); // adds intent to Disclaimer
+        startActivity(intent); //opens disclaimer page
     }
 
     public void openLogin(){
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
+        Intent intent = new Intent(this, LoginActivity.class); // adds intent to Login
+        startActivity(intent); //open login paige
     }
 }
