@@ -43,7 +43,6 @@ public class MapPaige extends FragmentActivity implements OnMapReadyCallback {
         mMap.getUiSettings().setCompassEnabled(true);
 
 
-        // Add a marker in Sydney and move the camera
         LatLng mylocation = new LatLng(51, 151);
         mMap.addMarker(new MarkerOptions().position(mylocation).title("Me"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mylocation));

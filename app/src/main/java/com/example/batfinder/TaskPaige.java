@@ -1,6 +1,7 @@
 package com.example.batfinder;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,13 +9,23 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.batfinder.ui.login.LoginActivity;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
-public class TaskPaige extends AppCompatActivity {
+public class TaskPaige extends AppCompatActivity{
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_paige);
+
+
 
         Button info = findViewById(R.id.info);
         info.setOnClickListener(new View.OnClickListener(){
@@ -55,4 +66,6 @@ public class TaskPaige extends AppCompatActivity {
         Intent intent = new Intent(this, MapPaige.class); //need to fix right paige.
         startActivity(intent);
     }
+
+
 }
