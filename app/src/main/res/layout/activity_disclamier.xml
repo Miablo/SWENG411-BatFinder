@@ -16,7 +16,7 @@
         android:layout_marginEnd="25dp"
         android:layout_marginRight="25dp"
         android:layout_marginBottom="80dp"
-        android:text="TextView"
+        android:text="@string/Disclaimer_txt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,9 +29,10 @@
         android:layout_marginStart="25dp"
         android:layout_marginLeft="25dp"
         android:layout_marginBottom="5dp"
-        android:text="Decline"
+        android:text="@string/decline"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/acept"
@@ -40,7 +41,8 @@
         android:layout_marginEnd="25dp"
         android:layout_marginRight="25dp"
         android:layout_marginBottom="5dp"
-        android:text="Acept"
+        android:text="@string/agree"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

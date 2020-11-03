@@ -8,17 +8,18 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="367dp"
-        android:layout_height="411dp"
+        android:layout_width="343dp"
+        android:layout_height="208dp"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_brownlongearedy" />
+        app:srcCompat="@drawable/ic_bat_logo" />
 
     <Button
         android:id="@+id/Guest"
@@ -28,10 +29,10 @@
         android:layout_marginLeft="25dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="200dp"
-        android:text="Guest"
+        android:text="@string/guest_login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -42,9 +43,9 @@
         android:layout_marginStart="25dp"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="24dp"
-        android:text="Login"
+        android:text="@string/admin_login"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintHorizontal_bias="0.328"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Guest" />
 
@@ -52,11 +53,22 @@
         android:id="@+id/feedback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:background="#00FFFFFF"
-        android:text="feedback"
+        android:text="@string/feedback_btn"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Guest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -104,4 +104,12 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="decline">Decline</string>
+    <string name="agree">Agree</string>
+    <string name="Disclaimer_txt">disclaimer</string>
+    <string name="guest_login">Guest</string>
+    <string name="admin_login">Login</string>
+    <string name="feedback_btn">feedback</string>
+    <string name="todo">TODO</string>
+    <string name="app_title">Bat Finder UK</string>
 </resources>
