@@ -45,6 +45,41 @@ public class InfoPaigeMain extends AppCompatActivity {
         textView = findViewById(R.id.commonpipistrelleText);
         is = getResources().openRawResource(R.raw.common_pipistrelle_statistic);
         ReadTextFile();
+        textView = findViewById(R.id.daubentonsText);
+        is = getResources().openRawResource(R.raw.daubentons_statistics);
+        ReadTextFile();
+        textView = findViewById(R.id.greaterhorseshoeText);
+        is = getResources().openRawResource(R.raw.greater_horshoe_statistics);
+        ReadTextFile();
+        textView = findViewById(R.id.greylongearededText);
+        is = getResources().openRawResource(R.raw.grey_long_eared_statistics);
+        ReadTextFile();
+        textView = findViewById(R.id.leislersText);
+        is = getResources().openRawResource(R.raw.leisler_statistics);
+        ReadTextFile();
+        textView = findViewById(R.id.lesserhorseshoeText);
+        is = getResources().openRawResource(R.raw.lesser_horseshoe_statistics);
+        ReadTextFile();
+        textView = findViewById(R.id.nathusiuspipistrellText);
+        is = getResources().openRawResource(R.raw.nathusius_pipistrelle_statistics);
+        ReadTextFile();
+        textView = findViewById(R.id.natterersText);
+        is = getResources().openRawResource(R.raw.natterer_statistics);
+        ReadTextFile();
+        textView = findViewById(R.id.noctuleText);
+        is = getResources().openRawResource(R.raw.noctule_statistics);
+        ReadTextFile();
+        textView = findViewById(R.id.serotineText);
+        is = getResources().openRawResource(R.raw.serotine_bat_statistics);
+        ReadTextFile();
+        textView = findViewById(R.id.sopranopipistrelleText);
+        is = getResources().openRawResource(R.raw.soprano_pipistrelle_bat_statistics);
+        ReadTextFile();
+        textView = findViewById(R.id.whiskeredText);
+        is = getResources().openRawResource(R.raw.whiskered_bat_statistics);
+        ReadTextFile();
+
+
 
 
     }

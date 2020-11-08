@@ -32,6 +32,13 @@ public class Disclaimer extends AppCompatActivity {
                 openTask();
             }
         });
+        Button button2 = findViewById(R.id.decline);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMain();
+            }
+        });
     }
 
     public void ReadTextFile(){
@@ -58,6 +65,10 @@ public class Disclaimer extends AppCompatActivity {
 
     public void openTask(){
         Intent intent = new Intent(this, TaskPaige.class);
+        startActivity(intent);
+    }
+    public void openMain(){
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
