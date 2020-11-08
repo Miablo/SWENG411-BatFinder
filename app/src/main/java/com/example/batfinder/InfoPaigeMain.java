@@ -28,8 +28,24 @@ public class InfoPaigeMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_paige_main);
         textView = findViewById(R.id.alcathoeText);
+        is = getResources().openRawResource(R.raw.alcathoe_bat_statistics);
+        ReadTextFile();
+        textView = findViewById(R.id.barbastelleText);
         is = getResources().openRawResource(R.raw.barbastelle_statistic);
         ReadTextFile();
+        textView = findViewById(R.id.bechsteinText);
+        is = getResources().openRawResource(R.raw.bechstein_statistic);
+        ReadTextFile();
+        textView = findViewById(R.id.brandtText);
+        is = getResources().openRawResource(R.raw.brandt_statstic);
+        ReadTextFile();
+        textView = findViewById(R.id.brownlongearedText);
+        is = getResources().openRawResource(R.raw.brown_long_eared_statistic);
+        ReadTextFile();
+        textView = findViewById(R.id.commonpipistrelleText);
+        is = getResources().openRawResource(R.raw.common_pipistrelle_statistic);
+        ReadTextFile();
+
 
     }
 

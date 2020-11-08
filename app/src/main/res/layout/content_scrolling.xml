@@ -23,6 +23,57 @@
                 android:layout_height="match_parent">
 
                 <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/commonpipistrelleText"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp" />
+
+                    <ImageButton
+                        android:id="@+id/commonpipistrelleButton"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/commonpipistreelbutton" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/brownlongearedButton"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/brownlongearedybutton" />
+
+                    <TextView
+                        android:id="@+id/brownlongearedText"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/brandtText"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp" />
+
+                    <ImageButton
+                        android:id="@+id/brandtButton"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/brandtsbutton" />
+
+                </TableRow>
+
+                <TableRow
                     android:id="@+id/tableRow"
                     android:layout_width="200dp"
                     android:layout_height="150dp">
@@ -31,36 +82,29 @@
                         android:id="@+id/alcathoeButton"
                         android:layout_width="200dp"
                         android:layout_height="100dp"
-                        app:srcCompat="@drawable/ic_alcathoebutton"/>
+                        app:srcCompat="@drawable/alcathoebutton" />
 
                     <TextView
                         android:id="@+id/alcathoeText"
                         android:layout_width="200dp"
                         android:layout_height="150dp" />
 
-                    <Button
-                        android:id="@+id/button2"
-                        android:layout_width="200dp"
-                        android:layout_height="50dp"
-                        android:text="Alcathoe Cry" />
-
                 </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="150dp">
 
                     <TextView
-                        android:id="@+id/textView10"
+                        android:id="@+id/barbastelleText"
                         android:layout_width="200dp"
-                        android:layout_height="150dp"
-                        android:text="TextView" />
+                        android:layout_height="150dp" />
 
-                    <ImageView
-                        android:id="@+id/imageView13"
+                    <ImageButton
+                        android:id="@+id/barbastelleButton"
                         android:layout_width="200dp"
                         android:layout_height="100dp"
-                        app:srcCompat="@drawable/ic_launcher_background" />
+                        app:srcCompat="@drawable/barbastellebutton" />
 
                 </TableRow>
 
@@ -68,109 +112,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <ImageView
-                        android:id="@+id/imageView15"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/ic_launcher_background" />
+                    <ImageButton
+                        android:id="@+id/bechsteinButton"
+                        android:layout_width="200dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/bechsteinsbutton" />
 
                     <TextView
-                        android:id="@+id/textView12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="TextView" />
-                </TableRow>
-            </TableLayout>
-
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/imageView7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/ic_launcher_background" />
-
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="301dp"
-                        android:layout_height="match_parent"
-                        android:text="TextView" />
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-                        <ImageView
-                            android:id="@+id/imageView14"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/ic_launcher_background" />
-
-                        <TextView
-                            android:id="@+id/textView11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:text="TextView" />
-                    </TableRow>
-
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/imageView8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/ic_launcher_background" />
-
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="TextView" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/imageView9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/ic_launcher_background" />
-
-                    <TextView
-                        android:id="@+id/textView7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="TextView" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/imageView10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/ic_launcher_background" />
-
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="TextView" />
-
+                        android:id="@+id/bechsteinText"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp" />
                 </TableRow>
             </TableLayout>
 
