@@ -6,7 +6,7 @@
     <string name="title_activity_login_paige">LoginPaige</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in">Proceed</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome "</string>
     <string name="invalid_username">Not a valid username</string>
@@ -109,8 +109,22 @@
     <string name="Disclaimer_txt">disclaimer</string>
     <string name="guest_login">Guest</string>
     <string name="admin_login">Login</string>
-    <string name="feedback_btn">feedback</string>
-    <string name="todo">TODO</string>
+    <string name="feedback_btn">Provide Feedback</string>
+    <string name="todo1">TODO</string>
     <string name="app_title">Bat Finder UK</string>
     <string name="privacy_policy">Privacy Policy</string>
+    <string name="logo_sm">logo</string>
+    <string name="Welcome">Welcome Back</string>
+    <string name="signin">Sign in to continue</string>
+    <string name="forgot_pw">Forgot Password?</string>
+    <string name="signup_btn">Become a Volunteer</string>
+    <string name="info_btn">Bat Info</string>
+    <string name="feedback_info_btn">Submit Feedback</string>
+    <string name="report_btn">Report a Bat Sighting</string>
+    <string name="map_btn">View Sightings Map</string>
+    <string name="logo1">logo</string>
+    <string name="logo_report">logo_report</string>
+    <string name="sighting_details">Sighting Details</string>
+    <string name="report_header">Report a Bat Sighting</string>
+    <string name="task_txt">What would you like to do?</string>
 </resources>
