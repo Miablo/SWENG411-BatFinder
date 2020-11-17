@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">BatFinder</string>
-    <string name="title_activity_task_paige">Map</string>
+    <string name="title_activity_task_paige">Task Page</string>
     <string name="title_activity_map_paige">Map</string>
     <string name="title_activity_maps">Map</string>
-    <string name="title_activity_login_paige">LoginPaige</string>
+    <string name="title_activity_login_paige">Login Page</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Proceed</string>
@@ -12,8 +12,8 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="title_activity_info_paige_main">ScrollingActivity</string>
+    <string name="title_activity_login">Login Activity</string>
+    <string name="title_activity_info_paige_main">Scrolling Activity</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
@@ -105,8 +105,8 @@
     </string>
     <string name="action_settings">Settings</string>
     <string name="decline">Decline</string>
-    <string name="agree">Agree</string>
-    <string name="Disclaimer_txt">disclaimer</string>
+    <string name="agree">Accept</string>
+    <string name="Disclaimer_txt">Disclaimer</string>
     <string name="guest_login">Guest</string>
     <string name="admin_login">Login</string>
     <string name="feedback_btn">Provide Feedback</string>
@@ -127,4 +127,83 @@
     <string name="sighting_details">Sighting Details</string>
     <string name="report_header">Report a Bat Sighting</string>
     <string name="task_txt">What would you like to do?</string>
+
+    <!-- Submit Report Sighting Type Drop Down Options -->
+    <string name="sightingtype1">In Flight</string>
+    <string name="sightingtype2">Roost</string>
+    <string name="sightingtype3">Swarming</string>
+    <string name="sightingtype4">Bat Box</string>
+    <string name="sightingtype5">Display Perch</string>
+
+    <!-- Submit Report Bat Species Drop Down Options -->
+    <string name="bat1">Alcathoe</string>
+    <string name="bat2">Barbastelle</string>
+    <string name="bat3">Bechstein</string>
+    <string name="bat4">Brandt</string>
+    <string name="bat5">Brown long-eared</string>
+    <string name="bat6">Common pipistrelle</string>
+    <string name="bat7">Daubenton</string>
+    <string name="bat8">Great horseshoe</string>
+    <string name="bat9">Grey long-eared</string>
+    <string name="bat10">Leisler</string>
+    <string name="bat11">Lesser horsehoe</string>
+    <string name="bat12">Nathusius</string>
+    <string name="bat13">Natterer</string>
+    <string name="bat14">Noctule</string>
+    <string name="bat15">Serotine</string>
+    <string name="bat16">Soprano pipistrelle</string>
+    <string name="bat17">Whiskered</string>
+    <string name="reportdata">Date</string>
+    <string name="sightingtype">sightingtype</string>
+    <string name="battype">battype</string>
+
+    <!-- Submit Report Sighting Dropdown Array -->
+    <string-array name="sightingtypelist">
+        <item>@string/sightingtype1</item>
+        <item>@string/sightingtype2</item>
+        <item>@string/sightingtype3</item>
+        <item>@string/sightingtype4</item>
+        <item>@string/sightingtype4</item>
+    </string-array>
+
+    <!-- Submit Report Bat Species Options -->
+    <string-array name="battypelist">
+        <item>@string/bat1</item>
+        <item>@string/bat2</item>
+        <item>@string/bat3</item>
+        <item>@string/bat4</item>
+        <item>@string/bat5</item>
+        <item>@string/bat5</item>
+        <item>@string/bat6</item>
+        <item>@string/bat6</item>
+        <item>@string/bat7</item>
+        <item>@string/bat8</item>
+        <item>@string/bat9</item>
+        <item>@string/bat10</item>
+        <item>@string/bat11</item>
+        <item>@string/bat12</item>
+        <item>@string/bat13</item>
+        <item>@string/bat14</item>
+        <item>@string/bat15</item>
+        <item>@string/bat16</item>
+        <item>@string/bat17</item>
+    </string-array>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
 </resources>
