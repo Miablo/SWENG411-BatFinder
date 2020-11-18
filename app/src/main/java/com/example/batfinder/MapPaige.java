@@ -1,5 +1,6 @@
 package com.example.batfinder;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
@@ -15,7 +16,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MapPaige extends FragmentActivity implements OnMapReadyCallback {
+public class MapPaige extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
