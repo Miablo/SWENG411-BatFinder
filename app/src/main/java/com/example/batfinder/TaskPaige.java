@@ -5,6 +5,9 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -52,6 +55,25 @@ public class TaskPaige extends AppCompatActivity{
             }
         });
     }
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_layout, menu);
+        return true;
+    }
+    public boolean onOptionsItemSelected(MenuItem item){
+        if (item.getItemId() == R.id.mapmenu) {
+            openmap();
+            return true;
+        } else if (item.getItemId() == R.id.infomenu) {
+            openinfo();
+            return true;
+        } else if (item.getItemId() == R.id.reportmenu) {
+            openreport();
+            return true;
+        }else
+        return super.onOptionsItemSelected(item);
+    }
+
     public void openinfo(){
         Intent intent = new Intent(this, InfoPaigeMain.class);
         startActivity(intent);

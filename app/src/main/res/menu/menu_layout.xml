@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mapmenu"
+        android:orderInCategory="101"
+        android:title="Map page" />
+    <item
+        android:id="@+id/infomenu"
+        android:orderInCategory="102"
+        android:title="Info Page" />
+    <item
+        android:id="@+id/reportmenu"
+        android:orderInCategory="103"
+        android:title="Report Page" />
+    <item
+        android:id="@+id/feedbackmenu"
+        android:title="FeedBack" />
+    <item
+        android:id="@+id/logoutmenu"
+        android:orderInCategory="104"
+        android:title="Logout" />
+</menu>

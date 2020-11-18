@@ -20,15 +20,13 @@
 
         <activity
             android:name=".InfoPaigeMain"
-            android:label="@string/title_activity_info_paige_main"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".TaskPaige" />
+            android:label="BatFinder"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TaskPaige" />
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity
-            android:name=".ui.login.LoginPaige"
-            android:label="@string/title_activity_login_paige" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -43,14 +41,17 @@
 
         <activity
             android:name=".MapPaige"
-            android:label="@string/title_activity_map_paige" />
+            android:label="@string/title_activity_map_paige"
+            android:theme="@style/AppTheme" />
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Disclaimer" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Disclaimer"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
