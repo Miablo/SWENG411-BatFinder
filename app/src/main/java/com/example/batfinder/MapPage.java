@@ -1,7 +1,6 @@
 package com.example.batfinder;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,14 +15,14 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class MapPaige extends AppCompatActivity implements OnMapReadyCallback {
+public class MapPage extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_map_paige);
+        setContentView(R.layout.activity_map_page);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.mapView);
@@ -50,17 +49,17 @@ public class MapPaige extends AppCompatActivity implements OnMapReadyCallback {
     }
 
     public void openinfo(){
-        Intent intent = new Intent(this, InfoPaigeMain.class);
+        Intent intent = new Intent(this, InfoPageMain.class);
         startActivity(intent);
     }
 
     public void openreport(){
-        Intent intent = new Intent(this, InfoPaigeMain.class); //need to fix right paige.
+        Intent intent = new Intent(this, InfoPageMain.class); //need to fix right paige.
         startActivity(intent);
     }
 
     public void openmap(){
-        Intent intent = new Intent(this, MapPaige.class); //need to fix right paige.
+        Intent intent = new Intent(this, MapPage.class); //need to fix right paige.
         startActivity(intent);
     }
 

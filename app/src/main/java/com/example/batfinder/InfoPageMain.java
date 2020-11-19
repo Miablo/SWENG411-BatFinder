@@ -3,26 +3,19 @@ package com.example.batfinder;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.material.appbar.CollapsingToolbarLayout;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.text.BreakIterator;
 
-public class InfoPaigeMain extends AppCompatActivity {
+public class InfoPageMain extends AppCompatActivity {
 
     TextView textView;
     InputStream is;
@@ -30,7 +23,7 @@ public class InfoPaigeMain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_info_paige_main);
+        setContentView(R.layout.activity_info_page_main);
         textView = findViewById(R.id.alcathoeText);
         is = getResources().openRawResource(R.raw.alcathoe_bat_statistics);
         ReadTextFile();
@@ -108,17 +101,17 @@ public class InfoPaigeMain extends AppCompatActivity {
     }
 
     public void openinfo(){
-        Intent intent = new Intent(this, InfoPaigeMain.class);
+        Intent intent = new Intent(this, InfoPageMain.class);
         startActivity(intent);
     }
 
     public void openreport(){
-        Intent intent = new Intent(this, InfoPaigeMain.class); //need to fix right paige.
+        Intent intent = new Intent(this, InfoPageMain.class); //need to fix right paige.
         startActivity(intent);
     }
 
     public void openmap(){
-        Intent intent = new Intent(this, MapPaige.class); //need to fix right paige.
+        Intent intent = new Intent(this, MapPage.class); //need to fix right paige.
         startActivity(intent);
     }
 
