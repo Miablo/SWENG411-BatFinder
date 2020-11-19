@@ -20,11 +20,11 @@
         android:theme="@style/Theme.TipTime">
         <activity android:name=".submitReport" />
         <activity
-            android:name=".InfoPaigeMain"
+            android:name=".InfoPageMain"
             android:label="@string/title_activity_info_paige_main"
             android:theme="@style/Theme.TipTime" />
 
-        <activity android:name=".TaskPaige"
+        <activity android:name=".TaskPage"
             android:label="BatFinder"
             android:theme="@style/Theme.TipTime" />
 
@@ -44,7 +44,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapPaige"
+            android:name=".MapPage"
             android:label="@string/title_activity_map_paige"
             android:theme="@style/Theme.TipTime" />
 

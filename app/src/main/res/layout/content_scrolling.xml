@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:clickable="true"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".InfoPaigeMain"
-    tools:showIn="@layout/activity_info_paige_main">
+    tools:context=".InfoPageMain"
+    tools:showIn="@layout/activity_info_page_main">
 
     <ScrollView
         android:layout_width="match_parent"

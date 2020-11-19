@@ -19,7 +19,7 @@ public class Disclaimer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_disclamier);
+        setContentView(R.layout.activity_disclaimer);
 
         textView = findViewById(R.id.textView);
         ReadTextFile();
@@ -64,7 +64,7 @@ public class Disclaimer extends AppCompatActivity {
     }
 
     public void openTask(){
-        Intent intent = new Intent(this, TaskPaige.class);
+        Intent intent = new Intent(this, TaskPage.class);
         startActivity(intent);
     }
     public void openMain(){
