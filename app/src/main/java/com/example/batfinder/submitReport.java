@@ -35,7 +35,7 @@ public class submitReport extends AppCompatActivity {
         }
 
         public void openinfo(){
-            Intent intent = new Intent(this, InfoPaigeMain.class);
+            Intent intent = new Intent(this, InfoPageMain.class);
             startActivity(intent);
         }
 
@@ -45,7 +45,7 @@ public class submitReport extends AppCompatActivity {
         }
 
         public void openmap(){
-            Intent intent = new Intent(this, MapPaige.class); //need to fix right paige.
+            Intent intent = new Intent(this, MapPage.class); //need to fix right paige.
             startActivity(intent);
         }
     }
