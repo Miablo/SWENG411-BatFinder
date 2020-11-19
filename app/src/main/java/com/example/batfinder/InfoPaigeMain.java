@@ -113,7 +113,7 @@ public class InfoPaigeMain extends AppCompatActivity {
     }
 
     public void openreport(){
-        Intent intent = new Intent(this, InfoPaigeMain.class); //need to fix right paige.
+        Intent intent = new Intent(this, submitReport.class); //need to fix right paige.
         startActivity(intent);
     }
 

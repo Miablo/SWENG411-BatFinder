@@ -1,9 +1,13 @@
 package com.example.batfinder;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -19,6 +23,10 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapPaige extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    LocationManager locationManager;
+    LocationListener locationListener;
+    double longitude;
+    double  latitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +37,20 @@ public class MapPaige extends AppCompatActivity implements OnMapReadyCallback {
                 .findFragmentById(R.id.mapView);
         assert mapFragment != null;
         mapFragment.getMapAsync(this);
+
+        locationManager = (LocationManager) this.getSystemService(LOCATION_SERVICE);
+        boolean isGPS_enabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+        if(isGPS_enabled){
+            locationListener = new LocationListener() {
+                @Override
+                public void onLocationChanged(@NonNull Location location) {
+                    longitude = location.getLongitude();
+                    latitude = location.getLatitude();
+
+
+                }
+            };
+        }
     }
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater = getMenuInflater();
@@ -55,7 +77,7 @@ public class MapPaige extends AppCompatActivity implements OnMapReadyCallback {
     }
 
     public void openreport(){
-        Intent intent = new Intent(this, InfoPaigeMain.class); //need to fix right paige.
+        Intent intent = new Intent(this, submitReport.class); //need to fix right paige.
         startActivity(intent);
     }
 
@@ -73,7 +95,7 @@ public class MapPaige extends AppCompatActivity implements OnMapReadyCallback {
         mMap.getUiSettings().setCompassEnabled(true);
 
 
-        LatLng mylocation = new LatLng(51, 151);
+        LatLng mylocation = new LatLng(longitude, latitude);
         mMap.addMarker(new MarkerOptions().position(mylocation).title("Me"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(mylocation));
     }
