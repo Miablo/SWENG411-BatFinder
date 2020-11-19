@@ -205,6 +205,7 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="sightingdetail">Sighting Details</string>
+    <string name="bat_logo_reportpage">logo_report_page</string>
 
 
 </resources>

@@ -5,24 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_color_batUK"
+    android:isScrollContainer="true"
     tools:context=".Disclaimer">
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="353dp"
         android:layout_height="481dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="80dp"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:isScrollContainer="true"
         android:text="@string/Disclaimer_txt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/privacy_policy"
+        android:textColor="@color/primary_batUK"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.689" />
+        app:layout_constraintVertical_bias="0.465" />
 
     <Button
         android:id="@+id/decline"
@@ -51,18 +62,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/privacy_policy"
-        android:textColor="@color/primary_batUK"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
