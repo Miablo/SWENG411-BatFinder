@@ -63,18 +63,18 @@ public class MapPage extends AppCompatActivity{
 
 
         // check permission
-        if(ActivityCompat.checkSelfPermission(MapPage.this,
-                Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
-        {
+       // if(ActivityCompat.checkSelfPermission(MapPage.this,
+         //       Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
+       // {
             // When permission granted
             getCurrentLocation();
-        }
-        else{
+       // }
+      //  else{
             // When permission denied
             // Request permission
-            ActivityCompat.requestPermissions(MapPage.this,
-                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
-        }
+       //     ActivityCompat.requestPermissions(MapPage.this,
+        //            new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 44);
+       // }
 
         locationManager = (LocationManager) this.getSystemService(LOCATION_SERVICE);
         boolean isGPS_enabled = locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
@@ -116,9 +116,10 @@ public class MapPage extends AppCompatActivity{
                             // Add marker on map
                             googleMap.addMarker(options);
 
-                            LatLng markerLocation = getLocationFromAddress(new Geocoder(getApplicationContext()), "St Katharine's & Wapping, London EC3N 4AB, United Kingdom");
-                            System.out.println(markerLocation.latitude + "  " + markerLocation.longitude);
-                            MarkerOptions marker1 = new MarkerOptions().position(markerLocation).title("TEST");
+                            // adds marker to the bat locations
+                            //LatLng markerLocation = getLocationFromAddress(new Geocoder(getApplicationContext()), "St Katharine's & Wapping, London EC3N 4AB, United Kingdom");
+                            LatLng test = new LatLng(51.509380, -0.080340);
+                            MarkerOptions marker1 = new MarkerOptions().position(test).title("TEST");
                             googleMap.addMarker(marker1);
 
                         }
@@ -128,7 +129,7 @@ public class MapPage extends AppCompatActivity{
         });
     }
 
-    @Override
+    /*@Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if(requestCode == 44){
             if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
@@ -136,7 +137,7 @@ public class MapPage extends AppCompatActivity{
                 getCurrentLocation();
             }
         }
-    }
+    }*/
 
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater = getMenuInflater();
@@ -176,7 +177,7 @@ public class MapPage extends AppCompatActivity{
    /* @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-    }*/
+    }
 
     public LatLng getLocationFromAddress(Geocoder context, String strAddress) {
 
@@ -201,7 +202,7 @@ public class MapPage extends AppCompatActivity{
 
         return p1;
     }
-/*
+
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
 
