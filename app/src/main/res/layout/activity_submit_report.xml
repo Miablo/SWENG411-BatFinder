@@ -10,11 +10,13 @@
         android:id="@+id/imageView4"
         android:layout_width="330dp"
         android:layout_height="88dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.53"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_bat_logo" />
+        app:srcCompat="@drawable/ic_bat_logo"
+        android:contentDescription="TODO" />
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -30,35 +32,34 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <!-- Form Description -->
 
             <TextView
                 android:id="@+id/TextViewTitle"
                 style="@style/TextAppearance.MaterialComponents.Headline4"
-                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
                 android:layout_height="82dp"
                 android:text="@string/report_header"
                 android:textColor="@color/primaryColor" />
 
             <TextView
                 android:layout_width="fill_parent"
-                android:layout_height="32dp"
-                android:text="@string/your_name"
+                android:layout_height="22dp"
+                android:text="@string/add_a_photo"
                 android:textAllCaps="true"
                 android:textColor="@color/primaryColor"
                 android:textSize="12sp" />
 
-            <EditText
-                android:id="@+id/EditTextName"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            <Button
+                android:id="@+id/UploadBtn"
+                style="@style/Widget.MaterialComponents.Button"
                 android:layout_width="fill_parent"
-                android:layout_height="30dp"
-                android:textAlignment="textStart"
-                android:autofillHints=""
-                android:paddingBottom="10dp"
-                android:inputType="textPersonName"
-                android:gravity="start" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/upload"
+                android:layout_gravity="center" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -73,6 +74,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="30dp"
                 android:autofillHints=""
+                android:labelFor="@+id/tag_accessibility_actions"
                 android:paddingBottom="10dp"
                 android:inputType="datetime" />
 
@@ -129,6 +131,7 @@
 
             <Button
                 android:layout_width="fill_parent"
+                android:layout_marginTop="20dp"
                 android:layout_height="wrap_content"
                 style="@style/Widget.MaterialComponents.Button"
                 android:text="@string/submitreport" />

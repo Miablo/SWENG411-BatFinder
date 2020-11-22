@@ -109,5 +109,8 @@
     <string name="your_name">Name</string>
     <string name="submitreport">Submit Report</string>
     <string name="username">Email</string>
+    <string name="submitFeedback">Submit Feedback</string>
+    <string name="add_a_photo">Add a Photo</string>
+    <string name="upload">Upload</string>
 
 </resources>
