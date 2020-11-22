@@ -8,14 +8,14 @@
     <item
         android:id="@+id/infomenu"
         android:orderInCategory="102"
-        android:title="Info Page" />
+        android:title="Bat Info Page" />
     <item
         android:id="@+id/reportmenu"
         android:orderInCategory="103"
         android:title="Report Page" />
     <item
         android:id="@+id/feedbackmenu"
-        android:title="FeedBack" />
+        android:title="Feedback" />
     <item
         android:id="@+id/logoutmenu"
         android:orderInCategory="104"
