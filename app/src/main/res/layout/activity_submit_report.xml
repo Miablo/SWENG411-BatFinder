@@ -4,100 +4,136 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_color_batUK"
     tools:context=".submitReport">
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="126dp"
-        android:layout_height="110dp"
-        android:contentDescription="@string/bat_logo_reportpage"
+        android:layout_width="330dp"
+        android:layout_height="88dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintHorizontal_bias="0.53"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_bat_logo" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="205dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="132dp"
-        android:text="@string/sightingdetail"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.169"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.571" />
-
-    <EditText
-        android:id="@+id/editTextTextPostalAddress"
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPostalAddress"
-        android:text="Address"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.243"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintVertical_bias="0.058" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.243"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="Email"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.243"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bat Sighting Report"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.412"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.293" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Submit Report"
+        android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.885" />
+        app:layout_constraintVertical_bias="0.497">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Form Description -->
+
+            <TextView
+                android:id="@+id/TextViewTitle"
+                style="@style/TextAppearance.MaterialComponents.Headline4"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:text="@string/report_header"
+                android:textColor="@color/primaryColor" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:text="@string/your_name"
+                android:textAllCaps="true"
+                android:textColor="@color/primaryColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/EditTextName"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:textAlignment="textStart"
+                android:autofillHints=""
+                android:paddingBottom="10dp"
+                android:inputType="textPersonName"
+                android:gravity="start" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:text="@string/date"
+                android:textAllCaps="true"
+                android:textColor="@color/primaryColor"
+                android:textSize="12sp" />
+
+            <EditText
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:autofillHints=""
+                android:paddingBottom="10dp"
+                android:inputType="datetime" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:text="@string/battype"
+                android:textAllCaps="true"
+                android:layout_gravity="start"
+                android:textAlignment="textStart"
+                android:textColor="@color/primaryColor"
+                android:textSize="12sp" />
+
+            <Spinner
+                style="@style/Widget.AppCompat.Spinner.DropDown"
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:entries="@array/battypelist" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:paddingTop="10dp"
+                android:text="@string/sightingtype"
+                android:textAllCaps="true"
+                android:textColor="@color/primaryColor"
+                android:textSize="12sp" />
+
+            <Spinner
+                style="@style/Widget.AppCompat.Spinner.DropDown"
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:entries="@array/sightingtypelist" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:paddingTop="10dp"
+                android:text="@string/sighting_details"
+                android:textAllCaps="true"
+                android:textColor="@color/primaryColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:paddingTop="40dp"
+                tools:layout_editor_absoluteY="494dp"
+                android:autofillHints="" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button"
+                android:text="@string/submitreport" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

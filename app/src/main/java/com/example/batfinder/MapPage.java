@@ -160,7 +160,7 @@ public class MapPage extends AppCompatActivity{
     }
 
     public void openinfo(){
-        Intent intent = new Intent(this, InfoPageMain.class);
+        Intent intent = new Intent(this, Cardview.class);
         startActivity(intent);
     }
 

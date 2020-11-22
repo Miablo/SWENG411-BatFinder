@@ -17,20 +17,28 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TipTime">
-        <activity android:name=".submitReport" />
+        android:theme="@style/Theme.BatFinder">
+
+        <activity
+            android:name=".Cardview"
+            android:label="@string/title_activity_cardview"
+            android:theme="@style/Theme.BatFinder" />
+        <activity
+            android:name=".submitReport"
+            android:label="@string/title_activity_submitReport"
+            android:theme="@style/Theme.BatFinder"/>
         <activity
             android:name=".InfoPageMain"
             android:label="@string/title_activity_info_paige_main"
-            android:theme="@style/Theme.TipTime" />
-
-        <activity android:name=".TaskPage"
+            android:theme="@style/Theme.BatFinder" />
+        <activity
+            android:name=".TaskPage"
             android:label="BatFinder"
-            android:theme="@style/Theme.TipTime" />
-
+            android:theme="@style/Theme.BatFinder" />
         <activity
             android:name=".ui.login.LoginActivity"
-            android:label="@string/title_activity_login" />
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.BatFinder" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -46,16 +54,18 @@
         <activity
             android:name=".MapPage"
             android:label="@string/title_activity_map_paige"
-            android:theme="@style/Theme.TipTime" />
+            android:theme="@style/Theme.BatFinder" />
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Disclaimer"
-            android:theme="@style/Theme.TipTime" />
-        <activity android:name=".MainActivity"
-            android:theme="@style/Theme.TipTime" >
+        <activity
+            android:name=".Disclaimer"
+            android:theme="@style/Theme.BatFinder" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.BatFinder">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

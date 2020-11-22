@@ -53,6 +53,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void openLogin(){
         Intent intent = new Intent(this, LoginActivity.class); // adds intent to Login
-        startActivity(intent); //open login paige
+        startActivity(intent); //open login page
     }
 }

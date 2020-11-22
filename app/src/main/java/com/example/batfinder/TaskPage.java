@@ -65,17 +65,17 @@ public class TaskPage extends AppCompatActivity{
     }
 
     public void openinfo(){
-        Intent intent = new Intent(this, InfoPageMain.class);
+        Intent intent = new Intent(this, Cardview.class); // leads to bat info page
         startActivity(intent);
     }
 
     public void openreport(){
-        Intent intent = new Intent(this, submitReport.class); //need to fix right paige.
+        Intent intent = new Intent(this, submitReport.class); // leads to report page
         startActivity(intent);
     }
 
     public void openmap(){
-        Intent intent = new Intent(this, MapPage.class); //need to fix right paige.
+        Intent intent = new Intent(this, MapPage.class); // leads to map
         startActivity(intent);
     }
 

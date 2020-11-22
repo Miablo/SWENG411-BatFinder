@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -15,7 +17,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-public class InfoPageMain extends AppCompatActivity {
+public class Cardview extends AppCompatActivity {
 
     TextView textView;
     InputStream is;
@@ -23,7 +25,17 @@ public class InfoPageMain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_info_page_main);
+        setContentView(R.layout.activity_cardview);
+
+       /* Button button2 = findViewById(R.id.report_btn);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openreport();
+            }
+        });*/
+
+        // Text Views
         textView = findViewById(R.id.alcathoeText);
         is = getResources().openRawResource(R.raw.alcathoe_bat_statistics);
         ReadTextFile();
@@ -98,17 +110,17 @@ public class InfoPageMain extends AppCompatActivity {
     }
 
     public void openinfo(){
-        Intent intent = new Intent(this, InfoPageMain.class);
+        Intent intent = new Intent(this, Cardview.class); // opens bat info page
         startActivity(intent);
     }
 
     public void openreport(){
-        Intent intent = new Intent(this, submitReport.class); //need to fix right paige.
+        Intent intent = new Intent(this, submitReport.class); // opens submit report page
         startActivity(intent);
     }
 
     public void openmap(){
-        Intent intent = new Intent(this, MapPage.class); //need to fix right paige.
+        Intent intent = new Intent(this, MapPage.class); // opens map page
         startActivity(intent);
     }
 
@@ -131,5 +143,6 @@ public class InfoPageMain extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 }

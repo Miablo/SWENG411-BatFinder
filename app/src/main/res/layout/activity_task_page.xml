@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_color_batUK">
+    >
 
     <Button
         android:id="@+id/info"
@@ -14,14 +14,12 @@
         android:layout_marginLeft="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:layout_marginBottom="180dp"
-        android:background="@color/primary_batUK"
+        android:layout_marginBottom="160dp"
         android:text="@string/info_btn"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
+        style="@style/Widget.MaterialComponents.Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -33,10 +31,8 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginBottom="20dp"
-        android:background="@color/primary_batUK"
         android:text="@string/report_btn"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
+        style="@style/Widget.MaterialComponents.Button"
         app:layout_constraintBottom_toTopOf="@+id/info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
@@ -50,37 +46,37 @@
         android:layout_marginLeft="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:background="@color/primary_batUK"
+        android:layout_marginBottom="20dp"
         android:text="@string/map_btn"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
+        style="@style/Widget.MaterialComponents.Button"
         app:layout_constraintBottom_toTopOf="@+id/report"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.968" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
         android:layout_marginBottom="5dp"
-        android:text="@string/feedback_info_btn"
+        android:text="@string/feedback_btn"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"
+
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        app:layout_constraintVertical_bias="0.897" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="215dp"
         android:layout_height="237dp"
+        android:layout_marginTop="24dp"
         android:contentDescription="@string/logo1"
-        app:layout_constraintBottom_toTopOf="@+id/maps"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.253"
         app:srcCompat="@drawable/ic_bat_logo" />
 
     <TextView
@@ -88,9 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/task_txt"
-        android:textColor="@color/primary_batUK"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        style="?attr/textAppearanceHeadline5"
         app:layout_constraintBottom_toTopOf="@+id/maps"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
