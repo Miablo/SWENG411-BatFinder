@@ -112,5 +112,12 @@
     <string name="submitFeedback">Submit Feedback</string>
     <string name="add_a_photo">Add a Photo</string>
     <string name="upload">Upload</string>
+    <string name="rating">How was your app experience?</string>
+    <string name="feedback_form">Feedback Form</string>
+    <string name="feedback_category">Please Select Your Feedback Category</string>
+    <string name="suggestion">Suggestion</string>
+    <string name="compliment">Compliment</string>
+    <string name="something_does_t_work">Bug</string>
+    <string name="logo_feedback">logo_feedback</string>
 
 </resources>

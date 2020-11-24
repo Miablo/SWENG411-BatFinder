@@ -7,41 +7,117 @@
     tools:context=".Feedback">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383">
 
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/TextAppearance.AppCompat.Body1"
-            android:text="How was your app experience?"
-            android:textAllCaps="true"
-            android:layout_marginBottom="10dp"
-            android:layout_gravity="center"
-            android:textColor="@color/primaryColor"/>
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Headline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:text="@string/feedback_form"
+                android:textAllCaps="true"
+                android:textColor="@color/primaryColor" />
 
-        <RatingBar
-            android:id="@+id/ratingBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="102dp"
-            android:layout_gravity="center"
-            tools:layout_editor_absoluteY="451dp" />
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="@string/rating"
+                android:textAllCaps="true"
+                android:textColor="@color/primaryColor" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="30dp"
+                tools:layout_editor_absoluteX="102dp"
+                tools:layout_editor_absoluteY="451dp" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/feedback_category"
+                android:textAllCaps="true"
+                android:textColor="@color/primaryColor" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_pirates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/suggestion" />
+
+                <RadioButton
+                    android:id="@+id/radio_ninjas1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/compliment" />
+
+                <RadioButton
+                    android:id="@+id/radio_ninjas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/something_does_t_work" />
+
+            </RadioGroup>
 
 
         </LinearLayout>
 
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="201dp"
+        android:layout_height="175dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_bat_logo"
+        android:contentDescription="@string/logo_feedback" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

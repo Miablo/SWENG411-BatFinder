@@ -18,8 +18,6 @@ public class TaskPage extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_task_page);
 
-
-
         Button info = findViewById(R.id.info);
         info.setOnClickListener(new View.OnClickListener(){
 
@@ -44,6 +42,14 @@ public class TaskPage extends AppCompatActivity{
                 openmap();
             }
         });
+
+        Button feedback = findViewById(R.id.feedback);
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openfeedback();
+            }
+        });
     }
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater = getMenuInflater();
@@ -60,8 +66,16 @@ public class TaskPage extends AppCompatActivity{
         } else if (item.getItemId() == R.id.reportmenu) {
             openreport();
             return true;
+        }else if (item.getItemId()== R.id.feedbackmenu) {
+            openfeedback();
+            return true;
         }else
         return super.onOptionsItemSelected(item);
+    }
+
+    private void openfeedback() {
+        Intent intent = new Intent(this, Feedback.class);
+        startActivity(intent);
     }
 
     public void openinfo(){
