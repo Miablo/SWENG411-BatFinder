@@ -43,8 +43,8 @@ public class TaskPage extends AppCompatActivity{
             }
         });
 
-        Button feedback = findViewById(R.id.feedback);
-        map.setOnClickListener(new View.OnClickListener() {
+        Button feedback = findViewById(R.id.feedback2);
+        feedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openfeedback();

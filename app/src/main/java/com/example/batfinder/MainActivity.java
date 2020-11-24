@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         checkPermission(); // calls check permission
         Button buttonguest = findViewById(R.id.Guest);
         Button buttonLogin = findViewById(R.id.Login);
+        Button buttonFeedback = findViewById(R.id.feedback);
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
                 openDisclaimer();
             }
         }); //calls openDiclamier method with a onClick
+
+        buttonFeedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFeedback();
+            }
+        }); //calls openDiclamier method with a onClick
+
     }
 
     private void checkPermission() { // ask for any permissions need add here for future permissions
@@ -54,5 +63,10 @@ public class MainActivity extends AppCompatActivity {
     public void openLogin(){
         Intent intent = new Intent(this, LoginActivity.class); // adds intent to Login
         startActivity(intent); //open login page
+    }
+
+    private void openFeedback() {
+        Intent intent = new Intent(this, Feedback.class);
+        startActivity(intent);
     }
 }

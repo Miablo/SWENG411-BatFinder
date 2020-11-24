@@ -54,7 +54,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/feedback2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -81,13 +81,14 @@
 
     <TextView
         android:id="@+id/textView10"
+        style="?attr/textAppearanceHeadline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/task_txt"
-        style="?attr/textAppearanceHeadline5"
         app:layout_constraintBottom_toTopOf="@+id/maps"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.209" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

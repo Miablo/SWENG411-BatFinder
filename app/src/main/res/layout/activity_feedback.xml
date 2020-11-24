@@ -15,7 +15,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.383">
+        app:layout_constraintVertical_bias="0.703">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="40dp"
                 android:text="@string/feedback_form"
                 android:textAllCaps="true"
                 android:textColor="@color/primaryColor" />
@@ -103,6 +103,34 @@
 
             </RadioGroup>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:paddingTop="10dp"
+                android:text="@string/leave_your_feedback_below"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:textColor="@color/primaryColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:paddingTop="40dp"
+                tools:layout_editor_absoluteY="494dp" />
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/submit_feedback" />
 
         </LinearLayout>
 

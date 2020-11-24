@@ -119,5 +119,8 @@
     <string name="compliment">Compliment</string>
     <string name="something_does_t_work">Bug</string>
     <string name="logo_feedback">logo_feedback</string>
+    <string name="todo">TODO</string>
+    <string name="submit_feedback">Submit Feedback</string>
+    <string name="leave_your_feedback_below">Leave your feedback below</string>
 
 </resources>

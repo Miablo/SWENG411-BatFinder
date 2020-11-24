@@ -10,13 +10,13 @@
         android:id="@+id/imageView4"
         android:layout_width="330dp"
         android:layout_height="88dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_bat_logo"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/ic_bat_logo" />
 
     <ScrollView
         android:layout_width="wrap_content"
@@ -37,9 +37,10 @@
             <TextView
                 android:id="@+id/TextViewTitle"
                 style="@style/TextAppearance.MaterialComponents.Headline4"
-                android:layout_marginTop="10dp"
                 android:layout_width="fill_parent"
-                android:layout_height="82dp"
+                android:layout_height="74dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
                 android:text="@string/report_header"
                 android:textColor="@color/primaryColor" />
 
