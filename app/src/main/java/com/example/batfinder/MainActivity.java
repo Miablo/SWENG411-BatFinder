@@ -9,6 +9,7 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.net.Uri;
 
 import com.example.batfinder.ui.login.LoginActivity;
 
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }); //calls openDiclamier method with a onClick
 
+
     }
 
     private void checkPermission() { // ask for any permissions need add here for future permissions
@@ -69,4 +71,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Feedback.class);
         startActivity(intent);
     }
+
 }

@@ -1,13 +1,16 @@
 package com.example.batfinder;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.app.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -133,6 +136,61 @@ public class Cardview extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+    }
+    public void goToAlcathoe(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Alcathoe_bat");
+    }
+    public void goToBarbastelle(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Western_barbastelle");
+    }
+    public void goToBechstein(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Bechstein%27s_bat");
+    }
+    public void goToBrandt(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Brandt%27s_bat");
+    }
+    public void goToBrown(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Brown_long-eared_bat");
+    }
+    public void goToCommon(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Common_pipistrelle");
+    }
+    public void goToDaubentons(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Daubenton%27s_bat");
+    }
+    public void goToGreater(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Greater_horseshoe_bat");
+    }
+    public void goToGrey(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Grey_long-eared_bat");
+    }
+    public void goToLeisler(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Lesser_noctule");
+    }
+    public void goToLesser(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Lesser_horseshoe_bat");
+    }
+    public void goToNathusius(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Nathusius%27s_pipistrelle");
+    }
+    public void goToNatterer(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Natterer%27s_bat");
+    }
+    public void goToNoctule(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Common_noctule");
+    }
+    public void goToSerotine(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Serotine_bat");
+    }
+    public void goToSoprano(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Soprano_pipistrelle");
+    }
+    public void goToWhiskered(View view) {
+        goToUrl("https://en.wikipedia.org/wiki/Whiskered_bat");
+    }
+    private void goToUrl(String url) {
+        Uri uriUrl = Uri.parse(url);
+        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+        startActivity(launchBrowser);
     }
 }

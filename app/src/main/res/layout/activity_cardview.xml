@@ -80,7 +80,11 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToAlcathoe"/>
+
+
 
                     </LinearLayout>
                 </LinearLayout>
@@ -148,7 +152,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToBarbastelle"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -215,7 +221,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToBechstein"/>
                     </LinearLayout>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -283,7 +291,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToBrandt"/>
                     </LinearLayout>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -352,7 +362,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToBrown"/>
                     </LinearLayout>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -419,7 +431,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToCommon"/>
                     </LinearLayout>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -486,7 +500,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToDaubentons"/>
                     </LinearLayout>
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -553,7 +569,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToGreater"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -620,7 +638,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToGrey"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -688,7 +708,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToLeisler"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -756,7 +778,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToLesser"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -824,7 +848,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToNathusius"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -893,7 +919,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToNatterer"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -961,7 +989,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToNoctule"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -1029,7 +1059,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToSerotine"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -1097,7 +1129,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToSoprano"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -1165,7 +1199,9 @@
                             style="?attr/borderlessButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Get More Info" />
+                            android:text="Get More Info"
+                            android:linksClickable="true"
+                            android:onClick="goToWhiskered"/>
                     </LinearLayout>
                     <!-- extra view to account for the end cutoff glitch -->
 
