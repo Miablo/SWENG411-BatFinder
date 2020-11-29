@@ -8,8 +8,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -26,14 +24,6 @@ public class Cardview extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cardview);
-
-       /* Button button2 = findViewById(R.id.report_btn);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openreport();
-            }
-        });*/
 
         // Text Views
         textView = findViewById(R.id.alcathoeText);
@@ -115,7 +105,7 @@ public class Cardview extends AppCompatActivity {
     }
 
     public void openreport(){
-        Intent intent = new Intent(this, submitReport.class); // opens submit report page
+        Intent intent = new Intent(this, SubmitReport.class); // opens submit report page
         startActivity(intent);
     }
 

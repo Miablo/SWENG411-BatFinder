@@ -84,7 +84,7 @@ public class TaskPage extends AppCompatActivity{
     }
 
     public void openreport(){
-        Intent intent = new Intent(this, submitReport.class); // leads to report page
+        Intent intent = new Intent(this, SubmitReport.class); // leads to report page
         startActivity(intent);
     }
 

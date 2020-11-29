@@ -30,7 +30,7 @@
             android:label="@string/title_activity_cardview"
             android:theme="@style/Theme.BatFinder" />
         <activity
-            android:name=".submitReport"
+            android:name=".SubmitReport"
             android:label="@string/title_activity_submitReport"
             android:theme="@style/Theme.BatFinder" />
         <activity

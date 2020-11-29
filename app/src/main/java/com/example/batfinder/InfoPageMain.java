@@ -103,7 +103,7 @@ public class InfoPageMain extends AppCompatActivity {
     }
 
     public void openreport(){
-        Intent intent = new Intent(this, submitReport.class); //need to fix right paige.
+        Intent intent = new Intent(this, SubmitReport.class); //need to fix right paige.
         startActivity(intent);
     }
 
