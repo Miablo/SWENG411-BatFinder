@@ -56,6 +56,7 @@ public class TaskPage extends AppCompatActivity{
         inflater.inflate(R.menu.menu_layout, menu);
         return true;
     }
+
     public boolean onOptionsItemSelected(MenuItem item){
         if (item.getItemId() == R.id.mapmenu) {
             openmap();
@@ -69,8 +70,16 @@ public class TaskPage extends AppCompatActivity{
         }else if (item.getItemId()== R.id.feedbackmenu) {
             openfeedback();
             return true;
+        }else if (item.getItemId() == R.id.homemenu) {
+            openhome();
+            return true;
         }else
-        return super.onOptionsItemSelected(item);
+            return super.onOptionsItemSelected(item);
+    }
+
+    private void openhome() {
+        Intent intent = new Intent(this, TaskPage.class);
+        startActivity(intent);
     }
 
     private void openfeedback() {
@@ -79,17 +88,17 @@ public class TaskPage extends AppCompatActivity{
     }
 
     public void openinfo(){
-        Intent intent = new Intent(this, Cardview.class); // leads to bat info page
+        Intent intent = new Intent(this, Cardview.class); // opens bat info page
         startActivity(intent);
     }
 
     public void openreport(){
-        Intent intent = new Intent(this, SubmitReport.class); // leads to report page
+        Intent intent = new Intent(this, SubmitReport.class); // opens submit report page
         startActivity(intent);
     }
 
     public void openmap(){
-        Intent intent = new Intent(this, MapPage.class); // leads to map
+        Intent intent = new Intent(this, MapPage.class); // opens map page
         startActivity(intent);
     }
 

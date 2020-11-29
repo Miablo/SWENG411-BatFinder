@@ -3,7 +3,6 @@ package com.example.batfinder;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.app.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +10,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -81,13 +83,27 @@ public class Cardview extends AppCompatActivity {
         is = getResources().openRawResource(R.raw.whiskered_bat_statistics);
         ReadTextFile();
 
+
+        // Submit Menu BTNs
+        Button report1 = findViewById(R.id.reportbat0);
+        report1.setOnClickListener(view -> openreport());
+
+        Button report2 = findViewById(R.id.reportbat1);
+        report2.setOnClickListener(view -> openreport());
+
     }
+
+//    public void setSelection (int index){
+//        report1.setSelection(index);
+//    }
+//
 
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_layout, menu);
         return true;
     }
+
     public boolean onOptionsItemSelected(MenuItem item){
         if (item.getItemId() == R.id.mapmenu) {
             openmap();
@@ -98,8 +114,24 @@ public class Cardview extends AppCompatActivity {
         } else if (item.getItemId() == R.id.reportmenu) {
             openreport();
             return true;
+        }else if (item.getItemId()== R.id.feedbackmenu) {
+            openfeedback();
+            return true;
+        }else if (item.getItemId() == R.id.homemenu) {
+            openhome();
+            return true;
         }else
             return super.onOptionsItemSelected(item);
+    }
+
+    private void openhome() {
+        Intent intent = new Intent(this, TaskPage.class);
+        startActivity(intent);
+    }
+
+    private void openfeedback() {
+        Intent intent = new Intent(this, Feedback.class);
+        startActivity(intent);
     }
 
     public void openinfo(){
@@ -137,6 +169,7 @@ public class Cardview extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
     public void goToAlcathoe(View view) {
         goToUrl("https://en.wikipedia.org/wiki/Alcathoe_bat");
     }

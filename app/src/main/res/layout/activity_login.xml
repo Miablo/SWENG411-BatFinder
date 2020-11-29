@@ -43,12 +43,12 @@
     <TextView
         android:id="@+id/textView4"
         style="?attr/textAppearanceHeadline4"
-        android:textColor="@color/primaryDarkColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="104dp"
         android:clickable="false"
         android:text="@string/Welcome"
+        android:textColor="@color/primaryDarkColor"
         app:layout_constraintBottom_toTopOf="@+id/username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.202"
@@ -138,6 +138,7 @@
 
     <Button
         android:id="@+id/login"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="336dp"
         android:layout_height="54dp"
         android:layout_gravity="start"
@@ -145,7 +146,6 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="64dp"
-        style="@style/Widget.MaterialComponents.Button"
         android:enabled="true"
         android:text="@string/action_sign_in"
         android:textSize="24sp"
@@ -164,6 +164,7 @@
         android:clickable="true"
         android:focusable="true"
         android:text="@string/forgot_pw"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.11"
@@ -179,6 +180,7 @@
         android:clickable="true"
         android:focusable="true"
         android:text="@string/signup_btn"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

@@ -25,26 +25,27 @@ public class MainActivity extends AppCompatActivity {
         Button buttonguest = findViewById(R.id.Guest);
         Button buttonLogin = findViewById(R.id.Login);
         Button buttonFeedback = findViewById(R.id.feedback);
+
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openLogin();
             }
         }); // calls openLogin method with a onClick
+
         buttonguest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openDisclaimer();
             }
-        }); //calls openDiclamier method with a onClick
+        }); //calls openDisclaimer method with a onClick
 
         buttonFeedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openFeedback();
             }
-        }); //calls openDiclamier method with a onClick
-
+        }); //calls openFeedback method with a onClick
 
     }
 

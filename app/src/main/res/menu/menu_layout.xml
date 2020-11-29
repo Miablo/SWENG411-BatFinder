@@ -2,22 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/mapmenu"
+        android:id="@+id/homemenu"
         android:orderInCategory="101"
+        android:title="Home" />
+    <item
+        android:id="@+id/mapmenu"
+        android:orderInCategory="102"
         android:title="Map page" />
     <item
         android:id="@+id/infomenu"
-        android:orderInCategory="102"
+        android:orderInCategory="103"
         android:title="Bat Info Page" />
     <item
         android:id="@+id/reportmenu"
-        android:orderInCategory="103"
+        android:orderInCategory="104"
         android:title="Report Page" />
     <item
         android:id="@+id/feedbackmenu"
+        android:orderInCategory="105"
         android:title="Feedback" />
     <item
         android:id="@+id/logoutmenu"
-        android:orderInCategory="104"
+        android:orderInCategory="106"
         android:title="Logout" />
 </menu>
