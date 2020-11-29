@@ -75,7 +75,7 @@
         <item>@string/sightingtype2</item>
         <item>@string/sightingtype3</item>
         <item>@string/sightingtype4</item>
-        <item>@string/sightingtype4</item>
+        <item>@string/sightingtype5</item>
     </string-array>
 
     <!-- Submit Report Bat Species Options -->
