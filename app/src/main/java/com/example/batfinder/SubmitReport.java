@@ -7,13 +7,33 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Spinner;
 
-public class SubmitReport extends AppCompatActivity {
+import com.google.android.material.snackbar.Snackbar;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+    public class SubmitReport extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_submit_report);
+
+        Button submitButton = (Button) findViewById(R.id.reportsubmit);
+        // perform click event on button
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v, "Report Submitted Successfully. Thank You!", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+            }
+        });
     }
         public boolean onCreateOptionsMenu(Menu menu){
             MenuInflater inflater = getMenuInflater();
@@ -30,22 +50,38 @@ public class SubmitReport extends AppCompatActivity {
             } else if (item.getItemId() == R.id.reportmenu) {
                 openreport();
                 return true;
+            }else if (item.getItemId()== R.id.feedbackmenu) {
+                openfeedback();
+                return true;
+            }else if (item.getItemId() == R.id.homemenu) {
+                openhome();
+                return true;
             }else
                 return super.onOptionsItemSelected(item);
         }
 
+        private void openhome() {
+            Intent intent = new Intent(this, TaskPage.class);
+            startActivity(intent);
+        }
+
+        private void openfeedback() {
+            Intent intent = new Intent(this, Feedback.class);
+            startActivity(intent);
+        }
+
         public void openinfo(){
-            Intent intent = new Intent(this, Cardview.class);
+            Intent intent = new Intent(this, Cardview.class); // opens bat info page
             startActivity(intent);
         }
 
         public void openreport(){
-            Intent intent = new Intent(this, SubmitReport.class); //need to fix right paige.
+            Intent intent = new Intent(this, SubmitReport.class); // opens submit report page
             startActivity(intent);
         }
 
         public void openmap(){
-            Intent intent = new Intent(this, MapPage.class); //need to fix right paige.
+            Intent intent = new Intent(this, MapPage.class); // opens map page
             startActivity(intent);
         }
     }

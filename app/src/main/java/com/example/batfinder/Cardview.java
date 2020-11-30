@@ -10,6 +10,9 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -80,38 +83,68 @@ public class Cardview extends AppCompatActivity {
         is = getResources().openRawResource(R.raw.whiskered_bat_statistics);
         ReadTextFile();
 
+
+        // Submit Menu BTNs
+        Button report1 = findViewById(R.id.reportbat0);
+        report1.setOnClickListener(view -> openreport());
+
+        Button report2 = findViewById(R.id.reportbat1);
+        report2.setOnClickListener(view -> openreport());
+
     }
+
+//    public void setSelection (int index){
+//        report1.setSelection(index);
+//    }
+//
 
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_layout, menu);
         return true;
     }
+
     public boolean onOptionsItemSelected(MenuItem item){
         if (item.getItemId() == R.id.mapmenu) {
-            openMap();
+            openmap();
             return true;
         } else if (item.getItemId() == R.id.infomenu) {
-            openInfo();
+            openinfo();
             return true;
         } else if (item.getItemId() == R.id.reportmenu) {
-            openReport();
+            openreport();
+            return true;
+        }else if (item.getItemId()== R.id.feedbackmenu) {
+            openfeedback();
+            return true;
+        }else if (item.getItemId() == R.id.homemenu) {
+            openhome();
             return true;
         }else
             return super.onOptionsItemSelected(item);
     }
 
-    public void openInfo(){
+    private void openhome() {
+        Intent intent = new Intent(this, TaskPage.class);
+        startActivity(intent);
+    }
+
+    private void openfeedback() {
+        Intent intent = new Intent(this, Feedback.class);
+        startActivity(intent);
+    }
+
+    public void openinfo(){
         Intent intent = new Intent(this, Cardview.class); // opens bat info page
         startActivity(intent);
     }
 
-    public void openReport(){
+    public void openreport(){
         Intent intent = new Intent(this, SubmitReport.class); // opens submit report page
         startActivity(intent);
     }
 
-    public void openMap(){
+    public void openmap(){
         Intent intent = new Intent(this, MapPage.class); // opens map page
         startActivity(intent);
     }
@@ -136,11 +169,8 @@ public class Cardview extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-    public void goToReport(View view){
-        openReport();
-    }
-    public void goToAlcathoe(View view) {
 
+    public void goToAlcathoe(View view) {
         goToUrl("https://en.wikipedia.org/wiki/Alcathoe_bat");
     }
     public void goToBarbastelle(View view) {
@@ -150,7 +180,6 @@ public class Cardview extends AppCompatActivity {
         goToUrl("https://en.wikipedia.org/wiki/Bechstein%27s_bat");
     }
     public void goToBrandt(View view) {
-
         goToUrl("https://en.wikipedia.org/wiki/Brandt%27s_bat");
     }
     public void goToBrown(View view) {
@@ -169,7 +198,6 @@ public class Cardview extends AppCompatActivity {
         goToUrl("https://en.wikipedia.org/wiki/Grey_long-eared_bat");
     }
     public void goToLeisler(View view) {
-
         goToUrl("https://en.wikipedia.org/wiki/Lesser_noctule");
     }
     public void goToLesser(View view) {
@@ -182,7 +210,6 @@ public class Cardview extends AppCompatActivity {
         goToUrl("https://en.wikipedia.org/wiki/Natterer%27s_bat");
     }
     public void goToNoctule(View view) {
-
         goToUrl("https://en.wikipedia.org/wiki/Common_noctule");
     }
     public void goToSerotine(View view) {
@@ -192,7 +219,6 @@ public class Cardview extends AppCompatActivity {
         goToUrl("https://en.wikipedia.org/wiki/Soprano_pipistrelle");
     }
     public void goToWhiskered(View view) {
-
         goToUrl("https://en.wikipedia.org/wiki/Whiskered_bat");
     }
     private void goToUrl(String url) {

@@ -34,10 +34,6 @@
             android:label="@string/title_activity_submitReport"
             android:theme="@style/Theme.BatFinder" />
         <activity
-            android:name=".InfoPageMain"
-            android:label="@string/title_activity_info_paige_main"
-            android:theme="@style/Theme.BatFinder" />
-        <activity
             android:name=".TaskPage"
             android:label="BatFinder"
             android:theme="@style/Theme.BatFinder" />

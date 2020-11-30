@@ -31,6 +31,7 @@
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:clickable="false"
             android:orientation="vertical">
             <!-- Form Description -->
 
@@ -57,10 +58,10 @@
                 style="@style/Widget.MaterialComponents.Button"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:text="@string/upload"
-                android:layout_gravity="center" />
+                android:text="@string/upload" />
 
             <TextView
                 android:layout_width="fill_parent"
@@ -75,21 +76,22 @@
                 android:layout_width="fill_parent"
                 android:layout_height="30dp"
                 android:autofillHints=""
+                android:inputType="datetime"
                 android:labelFor="@+id/tag_accessibility_actions"
-                android:paddingBottom="10dp"
-                android:inputType="datetime" />
+                android:paddingBottom="10dp" />
 
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="32dp"
-                android:text="@string/battype"
-                android:textAllCaps="true"
                 android:layout_gravity="start"
+                android:text="@string/battype"
                 android:textAlignment="textStart"
+                android:textAllCaps="true"
                 android:textColor="@color/primaryColor"
                 android:textSize="12sp" />
 
             <Spinner
+                android:id="@+id/species"
                 style="@style/Widget.AppCompat.Spinner.DropDown"
                 android:layout_width="fill_parent"
                 android:layout_height="64dp"
@@ -105,6 +107,7 @@
                 android:textSize="12sp" />
 
             <Spinner
+                android:id="@+id/sighting"
                 style="@style/Widget.AppCompat.Spinner.DropDown"
                 android:layout_width="fill_parent"
                 android:layout_height="64dp"
@@ -123,18 +126,19 @@
                 android:id="@+id/editTextTextMultiLine"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:autofillHints=""
                 android:ems="10"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
                 android:paddingTop="40dp"
-                tools:layout_editor_absoluteY="494dp"
-                android:autofillHints="" />
+                tools:layout_editor_absoluteY="494dp" />
 
             <Button
-                android:layout_width="fill_parent"
-                android:layout_marginTop="20dp"
-                android:layout_height="wrap_content"
+                android:id="@+id/reportsubmit"
                 style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="@string/submitreport" />
 
         </LinearLayout>

@@ -143,22 +143,38 @@ public class MapPage extends AppCompatActivity{
         } else if (item.getItemId() == R.id.reportmenu) {
             openreport();
             return true;
+        }else if (item.getItemId()== R.id.feedbackmenu) {
+            openfeedback();
+            return true;
+        }else if (item.getItemId() == R.id.homemenu) {
+            openhome();
+            return true;
         }else
             return super.onOptionsItemSelected(item);
     }
 
+    private void openhome() {
+        Intent intent = new Intent(this, TaskPage.class);
+        startActivity(intent);
+    }
+
+    private void openfeedback() {
+        Intent intent = new Intent(this, Feedback.class);
+        startActivity(intent);
+    }
+
     public void openinfo(){
-        Intent intent = new Intent(this, Cardview.class);
+        Intent intent = new Intent(this, Cardview.class); // opens bat info page
         startActivity(intent);
     }
 
     public void openreport(){
-        Intent intent = new Intent(this, SubmitReport.class); //need to fix right paige.
+        Intent intent = new Intent(this, SubmitReport.class); // opens submit report page
         startActivity(intent);
     }
 
     public void openmap(){
-        Intent intent = new Intent(this, MapPage.class); //need to fix right paige.
+        Intent intent = new Intent(this, MapPage.class); // opens map page
         startActivity(intent);
     }
 
