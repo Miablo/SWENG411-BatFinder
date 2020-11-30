@@ -74,7 +74,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="@string/report_btn" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -146,7 +148,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="Report a Sighting" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -215,7 +219,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="Report a Sighting" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport" />
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -285,7 +291,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="@string/report_btn" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -356,7 +364,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="@string/report_btn" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -425,7 +435,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="@string/report_btn" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -494,7 +506,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="@string/report_btn" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -563,7 +577,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="@string/report_btn" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -632,7 +648,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="@string/report_btn" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -702,7 +720,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="@string/report_btn" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -772,7 +792,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="@string/report_btn" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -842,7 +864,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="@string/report_btn" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -913,7 +937,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="@string/report_btn" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -983,7 +1009,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="@string/report_btn" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -1053,7 +1081,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="@string/report_btn" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -1123,7 +1153,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="@string/report_btn" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"
@@ -1193,7 +1225,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="8dp"
                             android:layout_marginRight="8dp"
-                            android:text="Report a Sighting" />
+                            android:text="@string/report_btn"
+                            android:linksClickable="true"
+                            android:onClick="goToReport"/>
 
                         <com.google.android.material.button.MaterialButton
                             style="?attr/borderlessButtonStyle"

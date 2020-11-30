@@ -3,7 +3,6 @@ package com.example.batfinder;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.app.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -90,29 +89,29 @@ public class Cardview extends AppCompatActivity {
     }
     public boolean onOptionsItemSelected(MenuItem item){
         if (item.getItemId() == R.id.mapmenu) {
-            openmap();
+            openMap();
             return true;
         } else if (item.getItemId() == R.id.infomenu) {
-            openinfo();
+            openInfo();
             return true;
         } else if (item.getItemId() == R.id.reportmenu) {
-            openreport();
+            openReport();
             return true;
         }else
             return super.onOptionsItemSelected(item);
     }
 
-    public void openinfo(){
+    public void openInfo(){
         Intent intent = new Intent(this, Cardview.class); // opens bat info page
         startActivity(intent);
     }
 
-    public void openreport(){
+    public void openReport(){
         Intent intent = new Intent(this, SubmitReport.class); // opens submit report page
         startActivity(intent);
     }
 
-    public void openmap(){
+    public void openMap(){
         Intent intent = new Intent(this, MapPage.class); // opens map page
         startActivity(intent);
     }
@@ -137,7 +136,11 @@ public class Cardview extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+    public void goToReport(View view){
+        openReport();
+    }
     public void goToAlcathoe(View view) {
+
         goToUrl("https://en.wikipedia.org/wiki/Alcathoe_bat");
     }
     public void goToBarbastelle(View view) {
@@ -147,6 +150,7 @@ public class Cardview extends AppCompatActivity {
         goToUrl("https://en.wikipedia.org/wiki/Bechstein%27s_bat");
     }
     public void goToBrandt(View view) {
+
         goToUrl("https://en.wikipedia.org/wiki/Brandt%27s_bat");
     }
     public void goToBrown(View view) {
@@ -165,6 +169,7 @@ public class Cardview extends AppCompatActivity {
         goToUrl("https://en.wikipedia.org/wiki/Grey_long-eared_bat");
     }
     public void goToLeisler(View view) {
+
         goToUrl("https://en.wikipedia.org/wiki/Lesser_noctule");
     }
     public void goToLesser(View view) {
@@ -177,6 +182,7 @@ public class Cardview extends AppCompatActivity {
         goToUrl("https://en.wikipedia.org/wiki/Natterer%27s_bat");
     }
     public void goToNoctule(View view) {
+
         goToUrl("https://en.wikipedia.org/wiki/Common_noctule");
     }
     public void goToSerotine(View view) {
@@ -186,6 +192,7 @@ public class Cardview extends AppCompatActivity {
         goToUrl("https://en.wikipedia.org/wiki/Soprano_pipistrelle");
     }
     public void goToWhiskered(View view) {
+
         goToUrl("https://en.wikipedia.org/wiki/Whiskered_bat");
     }
     private void goToUrl(String url) {
