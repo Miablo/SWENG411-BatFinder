@@ -84,13 +84,6 @@ public class Cardview extends AppCompatActivity {
         ReadTextFile();
 
 
-        // Submit Menu BTNs
-        Button report1 = findViewById(R.id.reportbat0);
-        report1.setOnClickListener(view -> openreport());
-
-        Button report2 = findViewById(R.id.reportbat1);
-        report2.setOnClickListener(view -> openreport());
-
     }
 
 //    public void setSelection (int index){
@@ -149,15 +142,14 @@ public class Cardview extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void ReadTextFile(){
+    public void ReadTextFile() {
         String string = "";
         StringBuilder stringBuilder = new StringBuilder();
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         while (true) {
             try {
                 if ((string = reader.readLine()) == null) break;
-            }
-            catch (IOException e) {
+            } catch (IOException e) {
                 e.printStackTrace();
             }
             stringBuilder.append(string).append("\n");
@@ -168,6 +160,9 @@ public class Cardview extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    public void goToReport(View view){
+        openreport();
     }
 
     public void goToAlcathoe(View view) {
@@ -180,6 +175,7 @@ public class Cardview extends AppCompatActivity {
         goToUrl("https://en.wikipedia.org/wiki/Bechstein%27s_bat");
     }
     public void goToBrandt(View view) {
+
         goToUrl("https://en.wikipedia.org/wiki/Brandt%27s_bat");
     }
     public void goToBrown(View view) {
