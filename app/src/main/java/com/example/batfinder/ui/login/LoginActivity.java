@@ -5,6 +5,7 @@ import android.app.Activity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -21,10 +22,13 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
 
 import com.example.batfinder.R;
 import com.example.batfinder.ui.login.LoginViewModel;
 import com.example.batfinder.ui.login.LoginViewModelFactory;
+import com.example.batfinder.TaskPage;
+import com.example.batfinder.data.LoginDataSource;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -75,8 +79,10 @@ public class LoginActivity extends AppCompatActivity {
 
                 //Complete and destroy login activity once successful
                 finish();
+                openTask();
             }
         });
+
 
         TextWatcher afterTextChangedListener = new TextWatcher() {
             @Override
@@ -112,11 +118,18 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                LoginDataSource dataSource = new LoginDataSource();
+                dataSource.login(usernameEditText.getText().toString(), passwordEditText.getText().toString());
                 loadingProgressBar.setVisibility(View.VISIBLE);
                 loginViewModel.login(usernameEditText.getText().toString(),
                         passwordEditText.getText().toString());
             }
         });
+    }
+
+    private void openTask() {
+        Intent intent = new Intent(this, TaskPage.class);
+        startActivity(intent);
     }
 
     private void updateUiWithUser(LoggedInUserView model) {
