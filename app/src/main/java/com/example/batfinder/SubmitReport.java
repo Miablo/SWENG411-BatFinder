@@ -25,14 +25,13 @@ import java.util.List;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_submit_report);
 
+        // Button Submit Report Functionality
         Button submitButton = (Button) findViewById(R.id.reportsubmit);
         // perform click event on button
-        submitButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Snackbar.make(v, "Report Submitted Successfully. Thank You!", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
+        submitButton.setOnClickListener(v -> {
+            // Snackbar pop up at bottom to display confirmation message
+            Snackbar.make(v, "Report Submitted Successfully. Thank You!", Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
         });
     }
         public boolean onCreateOptionsMenu(Menu menu){
@@ -40,6 +39,7 @@ import java.util.List;
             inflater.inflate(R.menu.menu_layout, menu);
             return true;
         }
+        // Menu options and functionality
         public boolean onOptionsItemSelected(MenuItem item){
             if (item.getItemId() == R.id.mapmenu) {
                 openmap();
