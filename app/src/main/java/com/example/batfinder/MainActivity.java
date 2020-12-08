@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ import com.example.batfinder.ui.login.LoginActivity;
 public class MainActivity extends AppCompatActivity {
 
     static final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 23;
+    static final int MY_PERMISSIONS_REQUEST_READ_CAMERA = 34;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +57,11 @@ public class MainActivity extends AppCompatActivity {
 
             ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, //Ask for fine location permission
                     MY_PERMISSIONS_REQUEST_READ_CONTACTS);
+        }
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
+        != PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA},
+                    MY_PERMISSIONS_REQUEST_READ_CAMERA);
         }
     }
 
