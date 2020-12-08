@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     static final int MY_PERMISSIONS_REQUEST_READ_CONTACTS = 23;
     static final int MY_PERMISSIONS_REQUEST_READ_CAMERA = 34;
+    static final int  MY_PERMISSIONS_REQUEST_READ_External = 33;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
         != PackageManager.PERMISSION_GRANTED){
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA},
                     MY_PERMISSIONS_REQUEST_READ_CAMERA);
+        }
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                    MY_PERMISSIONS_REQUEST_READ_External);
         }
     }
 
