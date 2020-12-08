@@ -19,6 +19,8 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -96,19 +98,16 @@ public class MapPage extends AppCompatActivity{
                                     location.getLongitude());
 
                             // Create marker options
-                            MarkerOptions options = new MarkerOptions().position(latlng).title("current location");
+                            MarkerOptions options = new MarkerOptions().position(latlng).title("current location")
+                                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED ));
 
                             // Zoom map
                             googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latlng, 10));
 
                             // Add marker on map
                             googleMap.addMarker(options);
+                            setBats(googleMap);
 
-                            // adds marker to the bat locations
-                            //LatLng markerLocation = getLocationFromAddress(new Geocoder(getApplicationContext()), "St Katharine's & Wapping, London EC3N 4AB, United Kingdom");
-                            LatLng test = new LatLng(51.509380, -0.080340);
-                            MarkerOptions marker1 = new MarkerOptions().position(test).title("TEST");
-                            googleMap.addMarker(marker1);
 
                         }
                     });
@@ -126,6 +125,49 @@ public class MapPage extends AppCompatActivity{
             }
         }
     }*/
+
+    public void setBats(GoogleMap googleMap){
+        String[] bat = new String[10];
+        double[] lat = new double[10];
+        double[] lng = new double[10];
+        bat[0] = "Alcathoe";
+        lat[0] = 51.513;
+        lng[0] = -0.1;
+        bat[1] = "Barbastelle";
+        lat[1] = 51;
+        lng[1] = -0.139;
+        bat[2] = "Bechstein";
+        lat[2] = 51.987;
+        lng[2] = -0.19;
+        bat[3] = "Brandt";
+        lat[3] = 51.378;
+        lng[3] = -0.081;
+        bat[4] = "Noctule";
+        lat[4] = 51.0982;
+        lng[4] = -0.102;
+        bat[5] = "Brown Long Eared";
+        lat[5] = 52.089;
+        lng[5] = -0.567;
+        bat[6] = "Common Pipistrelle";
+        lat[6] = 50.954;
+        lng[6] = -0.0986;
+        bat[7] = "Daubentons";
+        lat[7] = 51.098;
+        lng[7] = -0.09873;
+        bat[8] = "Greater Horseshoe";
+        lat[8] = 51.254;
+        lng[8] = -0.10983;
+        bat[9] = "Serotine";
+        lat[0] = 51.0254;
+        lng[0] = -0.000009;
+
+                for(int i = 0; i < bat.length; i++) {
+                    LatLng test = new LatLng(lat[i], lng[i]);
+                    MarkerOptions marker1 = new MarkerOptions().position(test).title(bat[i])
+                            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET ));
+                    googleMap.addMarker(marker1);
+                }
+    }
 
     public boolean onCreateOptionsMenu(Menu menu){
         MenuInflater inflater = getMenuInflater();
