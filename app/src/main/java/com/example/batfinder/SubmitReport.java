@@ -32,7 +32,10 @@ import java.util.List;
             // Snackbar pop up at bottom to display confirmation message
             Snackbar.make(v, "Report Submitted Successfully. Thank You!", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show();
+
+            finish();
         });
+
     }
         public boolean onCreateOptionsMenu(Menu menu){
             MenuInflater inflater = getMenuInflater();

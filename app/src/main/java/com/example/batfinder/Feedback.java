@@ -35,8 +35,12 @@ public class Feedback extends AppCompatActivity {
                // String totalStars = "Total Stars:: " + simpleRatingBar.getNumStars();
                // String rating = "Rating :: " + simpleRatingBar.getRating();
                // Toast.makeText(getApplicationContext(), totalStars + "\n" + rating, Toast.LENGTH_LONG).show();
+
+                finish();
             }
         });
+
+
     }
 
     public boolean onCreateOptionsMenu(Menu menu){
